@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $.getJSON( "/data.json", function( data ) {
-    for (var key in data) {
-        console.log(data[key]);
+    for (var i=0;i<data['data'].length;i++) {
+        console.log(data['data'][i]['tit']);
     }
   });
 });
