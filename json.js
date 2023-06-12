@@ -1,7 +1,10 @@
 $(document).ready(function(){
     $.getJSON( "/data.json", function( data ) {
+        var uls = document.findElementById('uls');
     for (var i=0;i<data['data'].length;i++) {
-        console.log(data['data'][i]['tit']);
+        var li = document.createElement('li');
+        li.innerHtml = data['data'][i]['tit'];
+        uls.appendChild(li);
     }
   });
 });
