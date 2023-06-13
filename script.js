@@ -4,7 +4,7 @@ var browser_name = new webdriver.Builder();
 
 withCapabilities(webdriver.Capabilities.firefox()).build();
 
-browser.get(‘http:/www.google.com’);
+browser.get('http:/www.google.com');
 
 var promise = browser_name.getTitle();
 
